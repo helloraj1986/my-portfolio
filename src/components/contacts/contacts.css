@@ -1,0 +1,111 @@
+.contact {
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (max-width: 768px) {
+  .contact {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.contact .left {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  overflow: hidden;
+}
+
+.contact .left img {
+  height: 100%;
+}
+
+.contact .right {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contact .right h2 {
+  font-size: 30px;
+}
+
+.contact .right form {
+  width: 70%;
+  height: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+@media (max-width: 768px) {
+  .contact .right form {
+    width: 90%;
+  }
+}
+
+.contact .right form input {
+  width: 300px;
+  height: 30px;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .contact .right form input {
+    width: 240px;
+    height: 20px;
+    margin-bottom: 10px;
+  }
+}
+
+.contact .right form textarea {
+  width: 300px;
+  height: 200px;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .contact .right form textarea {
+    width: 240px;
+    height: 200px;
+  }
+}
+
+.contact .right form button {
+  background-color: crimson;
+  width: 150px;
+  height: 30px;
+  border: none;
+  margin-top: 10px;
+  border-radius: 20px;
+  font-weight: 500;
+  cursor: pointer;
+}
+/*# sourceMappingURL=contacts.css.map */

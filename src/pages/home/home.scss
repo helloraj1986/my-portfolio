@@ -1,0 +1,7 @@
+@import '../scss/variables';
+@import '../scss/mixin';
+
+.home {
+	background-color: $mainColor;
+	color: $textColor;
+}

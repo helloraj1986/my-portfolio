@@ -1,0 +1,242 @@
+.works {
+  background-color: crimson;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+.works .arrow {
+  height: 50px;
+  position: absolute;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .works .arrow {
+    display: none;
+  }
+}
+
+.works .arrow.left {
+  left: 100px;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.works .arrow.right {
+  right: 100px;
+}
+
+.works .arrow.hidden {
+  opacity: 0;
+  cursor: auto;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+.works .slider {
+  height: 450px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  left: 0;
+  -webkit-transition: all 1.5s ease-in-out;
+  transition: all 1.5s ease-in-out;
+}
+
+@media (max-width: 768px) {
+  .works .slider {
+    height: 90vh;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.works .slider .container {
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.works .slider .container .item {
+  width: 800px;
+  height: 100%;
+  background-color: white;
+  border-radius: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .works .slider .container .item {
+    width: 90%;
+    height: 200px;
+    margin: 10px 0;
+  }
+}
+
+.works .slider .container .item .left {
+  -webkit-box-flex: 4;
+      -ms-flex: 4;
+          flex: 4;
+  height: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .works .slider .container .item .left {
+    -webkit-box-flex: 6;
+        -ms-flex: 6;
+            flex: 6;
+    height: 80%;
+  }
+}
+
+.works .slider .container .item .left .leftContainer {
+  width: 90%;
+  height: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.works .slider .container .item .left .leftContainer .imgContainer {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #ddb1a1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .works .slider .container .item .left .leftContainer .imgContainer {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+  }
+}
+
+.works .slider .container .item .left .leftContainer .imgContainer img {
+  width: 25px;
+}
+
+@media (max-width: 768px) {
+  .works .slider .container .item .left .leftContainer .imgContainer img {
+    width: 12px;
+  }
+}
+
+.works .slider .container .item .left .leftContainer h2 {
+  font-size: 20px;
+}
+
+@media (max-width: 768px) {
+  .works .slider .container .item .left .leftContainer h2 {
+    font-size: 15px;
+  }
+}
+
+.works .slider .container .item .left .leftContainer p {
+  font-size: 13px;
+}
+
+@media (max-width: 768px) {
+  .works .slider .container .item .left .leftContainer p {
+    font-size: 10px;
+  }
+}
+
+.works .slider .container .item .left .leftContainer span {
+  font-size: 12px;
+  font-weight: 600;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .works .slider .container .item .left .leftContainer span {
+    font-size: 10px;
+  }
+}
+
+.works .slider .container .item .right {
+  -webkit-box-flex: 8;
+      -ms-flex: 8;
+          flex: 8;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .works .slider .container .item .right {
+    -webkit-box-flex: 6;
+        -ms-flex: 6;
+            flex: 6;
+  }
+}
+
+.works .slider .container .item .right img {
+  width: 400px;
+  -webkit-transform: rotate(-5deg);
+          transform: rotate(-5deg);
+}
+/*# sourceMappingURL=works.css.map */

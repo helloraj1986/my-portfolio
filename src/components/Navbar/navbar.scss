@@ -1,0 +1,33 @@
+@import '../../scss/variables.scss';
+@import '../../scss/mixin.scss';
+
+.navbar {
+	background-color: $mainColor;
+	color: $textColor;
+	padding: 0 150px;
+	.nav-container {
+		@include flexRowCenter;
+		justify-content: space-between;
+		.nav-con-left {
+			flex: 6;
+			img {
+				width: 80px;
+				padding-top: 5px;
+			}
+		}
+		.nav-con-right {
+			flex: 6;
+			@include flexRowCenter;
+			justify-content: flex-end;
+			.link {
+				padding: 0px 10px;
+				text-transform: uppercase;
+				font-size: 20px;
+				font-family: 'Poppins', sans-serif;
+				font-weight: 600;
+				text-decoration: none;
+				color: $textColor;
+			}
+		}
+	}
+}

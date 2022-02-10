@@ -1,0 +1,42 @@
+.aboutWrapper {
+	height: 80vh;
+	width: 80vw;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	-webkit-box-shadow: 3px 3px 15px -3px #edf2f4;
+	box-shadow: 3px 3px 15px -3px #edf2f4;
+
+	.container {
+		padding: 20px;
+		height: 90%;
+		width: 70%;
+		background-color: #edf2f4;
+		opacity: 0.8;
+		color: $mainColor;
+		border-radius: 5px;
+		-webkit-box-shadow: 6px 6px 15px -3px #edf2f4;
+		box-shadow: 3px 3px 15px -3px #edf2f4;
+		hr.divider {
+			border: 3px solid $themeColor;
+			background-color: $themeColor;
+			width: 150px;
+			margin-bottom: 10px;
+		}
+		.title {
+			font-size: 32px;
+		}
+		.desc {
+			font-size: 14px;
+			padding: 8px;
+		}
+		.bold {
+			font-weight: 700;
+			font-size: 17px;
+			color: $textColorDark;
+			cursor: pointer;
+			letter-spacing: 1px;
+		}
+	}
+}

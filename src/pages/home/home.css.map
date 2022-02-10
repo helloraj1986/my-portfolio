@@ -1,0 +1,11 @@
+{
+    "version": 3,
+    "mappings": "AAGA,AAAA,KAAK,CAAC;EACL,gBAAgB,ECHL,OAAO;EDIlB,KAAK,ECLM,OAAO;EDMlB,KAAK,EAAE,GAAG;EACV,MAAM,EAAE,MAAM;CACd",
+    "sources": [
+        "home.scss",
+        "../scss/variables.scss",
+        "../scss/mixin.scss"
+    ],
+    "names": [],
+    "file": "home.css"
+}
