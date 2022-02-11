@@ -50,12 +50,20 @@
 }
 
 .hero .hero-container .hero-con-left .intro p {
-  font-size: 1.5rem;
+  font-size: 2.5rem;
 }
 
 .hero .hero-container .hero-con-left .skill {
   padding-top: 2rem;
   font-size: 1.5rem;
+}
+
+.hero .hero-container .hero-con-left .skill .bold {
+  font-weight: 700;
+  font-size: 14px;
+  color: #edf2f4;
+  cursor: pointer;
+  letter-spacing: 1px;
 }
 
 .hero .hero-container .hero-con-center {

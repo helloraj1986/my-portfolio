@@ -47,7 +47,7 @@ const About = () => {
 					<a
 						className='desc bold'
 						target='/'
-						href='https://drive.google.com/file/d/0Byj7m5MVva8wVjhZZkVwZDM5dlg4NVJYc2JzN2F4WURocmc0/view?usp=sharing&resourcekey=0-XetX2ukllXeGGNTokdNDDg'
+						href='https://drive.google.com/file/d/15oXORzZ5NTQiC7ACAHKyhjf5pl8HllTY/view?usp=sharing'
 					>
 						here.
 					</a>

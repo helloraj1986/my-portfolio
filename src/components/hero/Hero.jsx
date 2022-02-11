@@ -15,6 +15,7 @@ import logoReact from '../../images/react.svg'
 import { Motion, spring } from 'react-motion'
 import LeftArrow from '../leftArrow/LeftArrow'
 import RightArrow from '../rightArrow/RightArrow'
+import { Link } from 'react-router-dom'
 
 const Hero = () => {
 	const [isShowing, setIsShowing] = useState(false)
@@ -44,12 +45,13 @@ const Hero = () => {
 						<Typewriter
 							options={{
 								strings: [
+									'Welcome to my page.',
 									'My name is Rajeev Kumar Mohanty.',
-									'Welcome To my page.',
+									'I am a Web Developer based in Sydney, AU.',
 								],
 								autoStart: true,
 								loop: true,
-								pauseFor: 2000,
+								pauseFor: 1000,
 								wrapperClassName: 'typewriter',
 								cursorClassName: 'typewriter',
 							}}
@@ -64,19 +66,19 @@ const Hero = () => {
 					>
 						{(style) => (
 							<div style={{ opacity: style.opacity }}>
-								<div className='intro'>
+								{/* <div className='intro'>
 									<p>I am a Web Developer based in Sydney, AU.</p>
-									<p>
-										Exploring my creativity through innovative web deisgn
-										standarrds...
-									</p>
-								</div>
+								</div> */}
 
 								<p className='skill'>
-									Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-									Asperiores corrupti aperiam labore nobis quidem, dicta
-									recusandae tempora earum alias, iusto vel ipsam eligendi vero
-									illum!
+									A professional with 13 years of expereinece in total who loves
+									facing the customer and solving their problems. A self learned
+									web developer who is loving the creativity which comes with
+									it.Please click&nbsp;
+									<Link to='/about' className='bold'>
+										here
+									</Link>
+									&nbsp;to know more about me.
 								</p>
 							</div>
 						)}
