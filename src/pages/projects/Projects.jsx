@@ -4,7 +4,7 @@ import { useHistory, Link, useLocation } from 'react-router-dom'
 import { AiFillGithub } from 'react-icons/ai'
 //
 import './projects.scss'
-import project1 from '../../images/project1.jpg'
+import project1 from '../../images/project1_1.jpg'
 import project2 from '../../images/project2.jpg'
 import project3 from '../../images/project3.jpg'
 //
@@ -19,27 +19,27 @@ import ProjectButton from '../../components/projectButton/ProjectButton'
 const projectList = [
 	{
 		id: 1,
-		name: 'Memories',
+		name: 'urbanCART',
 		image: project1,
-		desc: 'This is the sample project.Fill in moredetails to know',
-		webAdd: '/',
-		githubLink: '/',
+		desc: "A full fledged shopping app.I have used HTML, CSS, REACT, REDUX for the front end and Material UI for the styling.The data in the website is coming from fakestore api.The link is 'https://fakestoreapi.com/docs'.Click the 'VISIT ME' to see the actual website.",
+		webAdd: 'https://urbancart.netlify.app/',
+		githubLink: 'https://github.com/helloraj1986/urbanHat-app',
 	},
 	{
 		id: 2,
-		name: 'urbanCART',
+		name: 'ScrapBook',
 		image: project2,
-		desc: "A full fledged shopping app.I have used HTML, CSS, REACT, REDUX for the front end and Material UI for the styling.The data in the website is coming from fakestore api.The link is 'https://fakestoreapi.com/docs'.Click the 'VISIT ME' to see the actual website.",
-		webAdd: 'https://urbancart.netlify.app/',
-		githubLink: '/',
+		desc: 'This is the sample project.Fill in moredetails to know',
+		webAdd: 'https://scrapbook2021.netlify.app',
+		githubLink: 'https://github.com/helloraj1986/scrapbook-part1-3',
 	},
 	{
 		id: 3,
 		name: 'netflixclone',
 		image: project3,
 		desc: 'This is the sample project.Fill in moredetails to know',
-		webAdd: '/',
-		githubLink: '/',
+		webAdd: 'https://clonenetflix2022.netlify.app',
+		githubLink: '/https://github.com/helloraj1986',
 	},
 ]
 
