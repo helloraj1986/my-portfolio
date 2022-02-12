@@ -45,11 +45,11 @@ const ContactForm = () => {
 					color='textSecondary'
 					align='center'
 					gutterBottom
+					className=''
 					style={{
 						fontFamily: 'Jost, sans-serif',
 						marginTop: '20px',
 						color: '#000814',
-						fontSize: '32px',
 						fontWeight: 600,
 					}}
 				>

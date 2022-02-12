@@ -5,22 +5,31 @@
 	width: 100%;
 	padding: 0 60px;
 	margin: 50px 50px;
-	.hero-container {
-		// background-color: $mainColor;
-		// color: $textColor;
 
+	@media (max-width: 600px) {
+		width: 100vw;
+		height: 90vw;
+		padding: 0 10px;
+		margin: 10px 10px;
+	}
+	.hero-container {
 		display: flex;
+		@media (max-width: 600px) {
+			flex-direction: column;
+		}
 		.hero-con-left {
 			flex: 4.5;
 			display: flex;
 			flex-direction: column;
 			justify-content: center;
+			@media (max-width: 600px) {
+				flex: 4;
+			}
 
 			.skill-btn {
 				width: 25%;
 				height: 30px;
 				margin: 1rem 0;
-				// color: #ffffff !important;
 				cursor: pointer;
 			}
 
@@ -28,23 +37,43 @@
 				font-family: 'Raleway', sans-serif;
 				font-weight: 400;
 				font-size: 4rem;
+				@media (max-width: 600px) {
+					font-size: 2rem;
+					margin-bottom: 10px;
+				}
 			}
 			.typewriter {
 				font-family: 'Raleway', sans-serif;
 				font-weight: 400;
 				font-size: 2.5rem;
+				@media (max-width: 600px) {
+					font-size: 1.25rem;
+				}
 			}
 
 			.intro {
+				font-family: 'Raleway', sans-serif;
 				padding-top: 2rem;
 				p {
 					font-size: 2.5rem;
+					@media (max-width: 600px) {
+						p {
+							font-size: 2rem;
+						}
+					}
 				}
 			}
 
 			.skill {
+				font-family: 'Raleway', sans-serif;
 				padding-top: 2rem;
 				font-size: 1.5rem;
+				@media (max-width: 600px) {
+					font-size: 1.2rem;
+					text-align: justify;
+					text-justify: inter-word;
+					padding-right: 10px;
+				}
 				.bold {
 					font-weight: 700;
 					font-size: 14px;
@@ -60,18 +89,41 @@
 			display: flex;
 			flex-direction: column;
 			justify-content: center;
+			@media (max-width: 600px) {
+				flex: 4;
+				margin: 0;
+				justify-content: space-between;
+				align-items: center;
+				margin: 10px 0;
+			}
 
 			.skill-title {
 				padding: 3rem 2.5rem;
+				@media (max-width: 600px) {
+					padding: 1rem 0;
+					margin: 0 auto;
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+					align-items: center;
+				}
 				h1 {
 					font-size: 2.5rem;
 					font-family: 'Raleway', sans-serif;
+					font-weight: 400;
+					@media (max-width: 600px) {
+						font-size: 2rem;
+					}
 				}
 				hr.divider {
 					border: 2px solid $themeColor;
 					background-color: $themeColor;
 					width: 250px;
 					margin: 10px 0;
+					@media (max-width: 600px) {
+						width: 80px;
+						margin: 8px 0;
+					}
 				}
 			}
 			.skills-con {
@@ -81,9 +133,17 @@
 				align-items: center;
 				justify-content: space-between;
 				color: $textColor;
+				@media (max-width: 600px) {
+					width: 90%;
+					justify-content: space-between;
+					padding: 0.5rem 0;
+				}
 				h2 {
 					font-size: 2rem;
 					font-family: 'Raleway', sans-serif;
+					@media (max-width: 600px) {
+						font-size: 1rem;
+					}
 				}
 			}
 		}
@@ -92,11 +152,22 @@
 			display: flex;
 			align-items: center;
 			justify-content: center;
+			@media (max-width: 600px) {
+				flex: 4;
+				margin: 0;
+				justify-content: center;
+				align-items: center;
+			}
 
 			.hero-img-con {
 				width: 340px;
 				height: 440px;
 				position: relative;
+				@media (max-width: 600px) {
+					width: 204px;
+					height: 264px;
+					position: relative;
+				}
 
 				.profile-img {
 					width: 300px;
@@ -108,6 +179,14 @@
 					left: 20px;
 					z-index: 5;
 					opacity: 0.7;
+					@media (max-width: 600px) {
+						width: 180px;
+						height: 240px;
+						top: 10px;
+						left: 10px;
+						z-index: 5;
+						opacity: 0.7;
+					}
 				}
 
 				.overlay-bg-bot {
@@ -119,16 +198,26 @@
 					left: 0;
 					top: 0;
 					opacity: 0.8;
+					@media (max-width: 600px) {
+						width: 18rem;
+						height: 24rem;
+					}
 				}
 				.overlay-bg-top {
 					position: absolute;
 					width: 30rem;
 					height: 40rem;
 					// background-color: #ff7700;
-					background-color: #edf2f4;
+					background-color: #ff7700;
 					left: 4rem;
 					top: 4rem;
 					opacity: 0.8;
+					@media (max-width: 600px) {
+						width: 18rem;
+						height: 24rem;
+						left: 2.2rem;
+						top: 2.2rem;
+					}
 				}
 			}
 		}

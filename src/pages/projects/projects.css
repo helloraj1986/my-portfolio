@@ -14,6 +14,14 @@
           align-items: center;
 }
 
+@media (max-width: 600px) {
+  .card-wrapper {
+    width: 95vw;
+    height: 80vh;
+    margin: 30px auto;
+  }
+}
+
 .card-wrapper .projects-card {
   width: 700px;
   border-radius: 10px;
@@ -26,6 +34,15 @@
   transition: all 0.3s ease-in;
 }
 
+@media (max-width: 600px) {
+  .card-wrapper .projects-card {
+    width: 330px;
+    height: 650px;
+    border-radius: 5px;
+    margin: 0 5px;
+  }
+}
+
 .card-wrapper .projects-card .img {
   width: 100%;
   height: 390px;
@@ -33,9 +50,24 @@
      object-fit: cover;
 }
 
+@media (max-width: 600px) {
+  .card-wrapper .projects-card .img {
+    width: 100%;
+    height: 350px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+
 .card-wrapper .projects-card .card-body {
   width: 100%;
   height: 130px;
+}
+
+@media (max-width: 600px) {
+  .card-wrapper .projects-card .card-body {
+    height: 300px;
+  }
 }
 
 .card-wrapper .projects-card .card-body .card-title {
@@ -43,9 +75,22 @@
   padding: 5px;
 }
 
-.card-wrapper .projects-card .card-body .card-text {
-  font-size: 10px;
+@media (max-width: 600px) {
+  .card-wrapper .projects-card .card-body .card-title {
+    margin: 10px 0;
+  }
+}
+
+.card-wrapper .projects-card .card-body .card-desc {
+  font-size: 12px;
   padding: 5px;
+}
+
+@media (max-width: 600px) {
+  .card-wrapper .projects-card .card-body .card-desc {
+    font-size: 14px;
+    margin: 10px 0;
+  }
 }
 
 .card-wrapper .projects-card .card-body .btn-container {
@@ -60,6 +105,12 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media (max-width: 600px) {
+  .card-wrapper .projects-card .card-body .btn-container {
+    width: 250px;
+  }
 }
 
 .card-wrapper .projects-card .card-body .btn-container .git-container {
@@ -126,11 +177,31 @@
   font-size: 60px;
 }
 
+@media (max-width: 600px) {
+  .card-wrapper .prev,
+  .card-wrapper .next {
+    font-size: 30px;
+    bottom: 0px;
+  }
+}
+
 .card-wrapper .prev {
   left: 125px;
 }
 
+@media (max-width: 600px) {
+  .card-wrapper .prev {
+    left: -10px;
+  }
+}
+
 .card-wrapper .next {
   right: 190px;
+}
+
+@media (max-width: 600px) {
+  .card-wrapper .next {
+    right: 10px;
+  }
 }
 /*# sourceMappingURL=projects.css.map */

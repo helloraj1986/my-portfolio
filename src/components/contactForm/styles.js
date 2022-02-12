@@ -5,6 +5,10 @@ export default makeStyles((theme) => ({
 		width: '700px',
 		margin: '20px auto',
 		textAlign: 'center',
+		[theme.breakpoints.down('sm')]: {
+			width: '330px',
+			margin: '50px auto',
+		},
 	},
 	card: {
 		padding: '5px 5px',

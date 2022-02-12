@@ -1,3 +1,5 @@
+@import '../../scss/variables';
+@import '../../scss/mixin';
 .aboutWrapper {
 	height: 80vh;
 	width: 80vw;
@@ -5,8 +7,12 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	-webkit-box-shadow: 3px 3px 15px -3px #edf2f4;
-	box-shadow: 3px 3px 15px -3px #edf2f4;
+	// -webkit-box-shadow: 3px 3px 15px -3px #edf2f4;
+	// box-shadow: 3px 3px 15px -3px #edf2f4;
+	@media (max-width: 600px) {
+		height: 90vh;
+		width: 90vw;
+	}
 
 	.container {
 		padding: 20px;
@@ -16,20 +22,41 @@
 		opacity: 0.8;
 		color: $mainColor;
 		border-radius: 5px;
-		-webkit-box-shadow: 6px 6px 15px -3px #edf2f4;
+		-webkit-box-shadow: 3px 3px 15px -3px #edf2f4;
 		box-shadow: 3px 3px 15px -3px #edf2f4;
+
+		@media (max-width: 600px) {
+			height: 90%;
+			width: 90%;
+			padding: 5px;
+			-webkit-box-shadow: 1.5px 1.5px 7.5px -1.5px #edf2f4;
+			box-shadow: 1.5px 1.5px 7.5px -1.5px #edf2f4;
+			text-align: justify;
+			text-justify: inter-word;
+		}
+		.title {
+			font-size: 32px;
+			@media (max-width: 600px) {
+				font-size: 20px;
+			}
+		}
 		hr.divider {
 			border: 3px solid $themeColor;
 			background-color: $themeColor;
 			width: 150px;
 			margin-bottom: 10px;
-		}
-		.title {
-			font-size: 32px;
+			@media (max-width: 600px) {
+				width: 50px;
+				border: 1.5px solid $themeColor;
+				background-color: $themeColor;
+			}
 		}
 		.desc {
 			font-size: 14px;
 			padding: 8px;
+			@media (max-width: 600px) {
+				font-size: 12px;
+			}
 		}
 		.bold {
 			font-weight: 700;
@@ -37,6 +64,10 @@
 			color: $textColorDark;
 			cursor: pointer;
 			letter-spacing: 1px;
+			@media (max-width: 600px) {
+				font-size: 14px;
+				letter-spacing: 0.5px;
+			}
 		}
 	}
 }

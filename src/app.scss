@@ -14,6 +14,8 @@ body {
 	background-repeat: no-repeat;
 	background-size: cover;
 	color: #5a5a5a;
+	width: 100vw;
+	height: 100vh;
 }
 
 .mainContainer {
@@ -23,6 +25,9 @@ body {
 	margin: 0 auto;
 	color: #fff;
 	// 	color: #fdfbf9;
+	@media (max-width: 600px) {
+		overflow: hidden;
+	}
 }
 
 html {

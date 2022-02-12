@@ -29,7 +29,7 @@ const projectList = [
 		id: 2,
 		name: 'ScrapBook',
 		image: project2,
-		desc: 'This is the sample project.Fill in moredetails to know',
+		desc: 'A fun app for adding, editing and liking memories bu user.I have used HTML, CSS, REACT,REDUX and MATERIAL-UI to build the app',
 		webAdd: 'https://scrapbook2021.netlify.app',
 		githubLink: 'https://github.com/helloraj1986/scrapbook-part1-3',
 	},
@@ -37,7 +37,7 @@ const projectList = [
 		id: 3,
 		name: 'netflixclone',
 		image: project3,
-		desc: 'This is the sample project.Fill in moredetails to know',
+		desc: 'This is the clone of NETFLIX. I have used HTML, CSS , SCSS and REACT to build this website.',
 		webAdd: 'https://clonenetflix2022.netlify.app',
 		githubLink: '/https://github.com/helloraj1986',
 	},
@@ -81,7 +81,7 @@ const Projects = () => {
 							<img src={image} alt='' className='img' />
 							<div className='card-body'>
 								<div className='card-title'>{name}</div>
-								<div className='card-text'>{desc}</div>
+								<div className='card-desc'>{desc}</div>
 								<div className='btn-container'>
 									<ProjectButton webAdd={webAdd} />
 									<div className='git-container'>

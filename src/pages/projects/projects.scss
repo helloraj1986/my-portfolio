@@ -9,6 +9,11 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	@media (max-width: 600px) {
+		width: 95vw;
+		height: 80vh;
+		margin: 30px auto;
+	}
 
 	.projects-card {
 		width: 700px;
@@ -18,23 +23,44 @@
 		background-color: rgba(38, 36, 36, 0.79);
 		box-shadow: 0 2px 6px 0 rgb(148, 147, 147);
 		transition: $transition;
+		@media (max-width: 600px) {
+			width: 330px;
+			height: 650px;
+			border-radius: 5px;
+			margin: 0 5px;
+		}
 
 		.img {
 			width: 100%;
 			height: 390px;
 			object-fit: cover;
+			@media (max-width: 600px) {
+				width: 100%;
+				height: 350px;
+				object-fit: cover;
+			}
 		}
 		.card-body {
 			width: 100%;
 			height: 130px;
+			@media (max-width: 600px) {
+				height: 300px;
+			}
 			.card-title {
 				font-size: 24px;
 				padding: 5px;
+				@media (max-width: 600px) {
+					margin: 10px 0;
+				}
 			}
 
-			.card-text {
-				font-size: 10px;
+			.card-desc {
+				font-size: 12px;
 				padding: 5px;
+				@media (max-width: 600px) {
+					font-size: 14px;
+					margin: 10px 0;
+				}
 			}
 
 			.btn-container {
@@ -43,6 +69,10 @@
 				display: flex;
 				justify-content: space-between;
 				align-items: center;
+				@media (max-width: 600px) {
+					width: 250px;
+				}
+
 				.git-container {
 					display: flex;
 					align-items: center;
@@ -94,11 +124,21 @@
 		width: 1rem;
 		height: 1rem;
 		font-size: 60px;
+		@media (max-width: 600px) {
+			font-size: 30px;
+			bottom: 0px;
+		}
 	}
 	.prev {
 		left: 125px;
+		@media (max-width: 600px) {
+			left: -10px;
+		}
 	}
 	.next {
 		right: 190px;
+		@media (max-width: 600px) {
+			right: 10px;
+		}
 	}
 }
