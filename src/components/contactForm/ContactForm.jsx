@@ -5,19 +5,18 @@ import {
 	CardContent,
 	Grid,
 	TextField,
-	Button,
-	Paper,
-	Container,
+	useMediaQuery,
+	useTheme,
 } from '@material-ui/core'
 import emailjs from 'emailjs-com'
-import SendIcon from '@material-ui/icons/Send'
 //
 import useStyles from './styles'
-import { CropLandscapeOutlined } from '@material-ui/icons'
 import ProjectButton from '../projectButton/ProjectButton'
 
 const ContactForm = () => {
 	const styles = useStyles()
+	const theme = useTheme()
+	const matches = useMediaQuery(theme.breakpoints.between('0px', '380px'))
 	const [confDisplay, setConfDisplay] = useState(false)
 
 	const [formData, setFormData] = useState({
@@ -48,7 +47,7 @@ const ContactForm = () => {
 					className=''
 					style={{
 						fontFamily: 'Jost, sans-serif',
-						marginTop: '20px',
+						marginTop: '10px',
 						color: '#000814',
 						fontWeight: 600,
 					}}
@@ -128,7 +127,7 @@ const ContactForm = () => {
 									fullWidth
 									variant='outlined'
 									multiline
-									rows={10}
+									rows={8}
 									className={styles.textField}
 									required
 									onChange={(e) =>
