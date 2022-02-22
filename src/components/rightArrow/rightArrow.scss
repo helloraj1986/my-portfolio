@@ -4,6 +4,10 @@
 	height: 15px;
 	transform: rotate(-45deg);
 	margin-left: 10px;
+	@media (max-width: 600px) {
+		width: 7.5px;
+		height: 7.5px;
+	}
 	span {
 		position: absolute;
 		left: 0;
@@ -14,30 +18,54 @@
 		border: none;
 		border-bottom: 6px solid #fff;
 		border-right: 6px solid #fff;
+		@media (max-width: 600px) {
+			border-bottom: 3px solid #edf2f4;
+			border-right: 3px solid #edf2f4;
+		}
 		animation: animate-u 1.5s linear infinite;
 		&:nth-child(1) {
 			top: -16px;
 			left: -16px;
+			@media (max-width: 600px) {
+				top: -8px;
+				left: -8px;
+			}
 			animation-delay: 0s;
 		}
 		&:nth-child(2) {
 			top: -8px;
 			left: -8px;
+			@media (max-width: 600px) {
+				top: -4px;
+				left: -4px;
+			}
 			animation-delay: 0.3s;
 		}
 		&:nth-child(3) {
 			top: 0;
 			left: 0;
+			@media (max-width: 600px) {
+				top: 0;
+				left: 0;
+			}
 			animation-delay: 0.6s;
 		}
 		&:nth-child(4) {
 			top: 8px;
 			left: 8px;
+			@media (max-width: 600px) {
+				top: 4px;
+				left: 4px;
+			}
 			animation-delay: 0.9s;
 		}
 		&:nth-child(5) {
 			top: 16px;
 			left: 16px;
+			@media (max-width: 600px) {
+				top: 8px;
+				left: 8px;
+			}
 			animation-delay: 1.2s;
 		}
 	}

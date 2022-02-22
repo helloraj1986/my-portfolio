@@ -7,14 +7,19 @@ export default makeStyles((theme) => ({
 		textAlign: 'center',
 		[theme.breakpoints.down('sm')]: {
 			width: '330px',
-			margin: '50px auto',
+			margin: '30px auto',
 		},
 	},
 	card: {
 		padding: '5px 5px',
+		height: '650px',
 		background: '#edf2f4',
 		opacity: '0.8',
 		boxShadow: '3px 3px 5px -3px #EDF2F4',
+		[theme.breakpoints.down('sm')]: {
+			height: '560px',
+			padding: 0,
+		},
 	},
 	item: {
 		margin: '5px 5px',

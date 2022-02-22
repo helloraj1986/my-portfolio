@@ -6,27 +6,69 @@
 }
 
 body {
-	overflow: hidden;
+	// overflow: hidden;
 	background: #0e0e10;
-	background-image: url(./images/bg_2.jpg);
-	background-color: rgba(75, 47, 47, 0.838);
-	background-blend-mode: overlay;
-	background-repeat: no-repeat;
-	background-size: cover;
-	color: #5a5a5a;
+	// background-image: url(./images/video.mp4);
+	// background: hsla(45, 60%, 78%, 1);
+
+	// background: linear-gradient(
+	// 	135deg,
+	// 	hsla(45, 60%, 78%, 1) 0%,
+	// 	hsla(39, 100%, 47%, 1) 50%,
+	// 	hsla(30, 98%, 40%, 1) 99%
+	// );
+
+	// background: -moz-linear-gradient(
+	// 	135deg,
+	// 	hsla(45, 60%, 78%, 1) 0%,
+	// 	hsla(39, 100%, 47%, 1) 50%,
+	// 	hsla(30, 98%, 40%, 1) 99%
+	// );
+
+	// background: -webkit-linear-gradient(
+	// 	135deg,
+	// 	hsla(45, 60%, 78%, 1) 0%,
+	// 	hsla(39, 100%, 47%, 1) 50%,
+	// 	hsla(30, 98%, 40%, 1) 99%
+	// );
+
+	#background-video {
+		width: 100vw;
+		height: 100vh;
+		object-fit: cover;
+		position: fixed;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		z-index: -1;
+	}
+	.video-overlay {
+		position: fixed;
+		z-index: 1;
+		width: 100vw;
+		height: 100vh;
+		background-color: rgba(0, 0, 0, 0.6);
+	}
+	// background-color: rgba(75, 47, 47, 0.838);
+	// background-blend-mode: overlay;
+	// background-repeat: no-repeat;
+	// background-size: cover;
+	// color: #5a5a5a;
 	width: 100vw;
 	height: 100vh;
 }
 
 .mainContainer {
 	// width: 90vw;
+	position: fixed;
+	z-index: 3;
 	width: 100vw;
-	height: 100vh;
+	// height: 100vh;
 	margin: 0 auto;
 	color: #fff;
 	// 	color: #fdfbf9;
 	@media (max-width: 600px) {
-		overflow: hidden;
 	}
 }
 

@@ -31,7 +31,10 @@ const Hero = () => {
 	return (
 		<div className='hero'>
 			<div className='hero-container'>
-				<div className='hero-con-left'>
+				<div
+					className='hero-con-left'
+					style={!isShowing ? { flex: 12, width: '100%' } : null}
+				>
 					<div className='skill-btn' onClick={() => setIsShowing(!isShowing)}>
 						{isShowing ? (
 							// <VisibilityRoundedIcon style={{ fontSize: 50, color: 'red' }} />
@@ -41,12 +44,13 @@ const Hero = () => {
 						)}
 					</div>
 					<div className='introContainer'>
-						<h1>Hello and Namaste,</h1>
+						<h1 style={!isShowing ? { fontSize: '56px' } : null}>
+							RAJEEV KUMAR MOHANTY
+						</h1>
 						<Typewriter
 							options={{
 								strings: [
 									'Welcome to my page.',
-									'My name is Rajeev Kumar Mohanty.',
 									'I am a Web Developer based in Sydney, AU.',
 								],
 								autoStart: true,
@@ -69,12 +73,13 @@ const Hero = () => {
 								{/* <div className='intro'>
 									<p>I am a Web Developer based in Sydney, AU.</p>
 								</div> */}
-
-								<p className='skill'>
+								<p className='about-desc'>
 									A professional with 13 years of expereinece in total who loves
 									facing the customer and solving their problems. A self learned
-									web developer who is loving the creativity which comes with
-									it.Please click&nbsp;
+									web developer who is loving the creativity which comes with it.
+								</p>
+								<p className='about-desc'>
+									Please click&nbsp;
 									<Link to='/about' className='bold'>
 										here
 									</Link>
@@ -100,21 +105,22 @@ const Hero = () => {
 								}}
 							>
 								<div className='skill-title'>
-									<h1>Tech i have used :-</h1>
-									<hr className='divider' />
+									<h1>Skills</h1>
 								</div>
-								{skillsText.map((s) => {
-									return (
-										<>
-											<div className='skills-con'>
-												<h2>{s.skill}</h2>
-												<div className='svgLogo'>
-													<img src={s.logo} alt='' />
+								<div className='skill-con-wrapper'>
+									{skillsText.map((s) => {
+										return (
+											<>
+												<div className='skills-con'>
+													<h2>{s.skill}</h2>
+													<div className='svgLogo'>
+														<img src={s.logo} alt='' />
+													</div>
 												</div>
-											</div>
-										</>
-									)
-								})}
+											</>
+										)
+									})}
+								</div>
 							</div>
 						)}
 					</Motion>

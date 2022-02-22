@@ -2,21 +2,27 @@
 @import '../../scss/mixin';
 
 .card-wrapper {
+	// background-color: orange;
 	width: 90vw;
 	height: 550px;
-	margin: 20px auto;
+	margin: 0 auto;
 	position: relative;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	@media (max-width: 600px) {
-		width: 95vw;
-		height: 80vh;
-		margin: 30px auto;
+		width: 90vw;
+		height: 750px;
+		margin: 10px auto;
+	}
+	@media (max-width: 380px) {
+		width: 90vw;
+		height: 570px;
+		margin: 15px auto;
 	}
 
 	.projects-card {
-		width: 700px;
+		width: 1000px;
 		border-radius: 10px;
 		margin: 0 2rem;
 		padding: 1rem 1rem;
@@ -25,18 +31,28 @@
 		transition: $transition;
 		@media (max-width: 600px) {
 			width: 330px;
-			height: 650px;
+			height: 700px;
 			border-radius: 5px;
 			margin: 0 5px;
+		}
+		@media (max-width: 380px) {
+			width: 320px;
+			height: 560px;
+			margin: 15px auto;
 		}
 
 		.img {
 			width: 100%;
-			height: 390px;
+			height: 410px;
 			object-fit: cover;
 			@media (max-width: 600px) {
 				width: 100%;
-				height: 350px;
+				height: 420px;
+				object-fit: cover;
+			}
+			@media (max-width: 380px) {
+				width: 100%;
+				height: 330px;
 				object-fit: cover;
 			}
 		}
@@ -46,11 +62,17 @@
 			@media (max-width: 600px) {
 				height: 300px;
 			}
+			@media (max-width: 380px) {
+				height: 250px;
+			}
 			.card-title {
 				font-size: 24px;
 				padding: 5px;
 				@media (max-width: 600px) {
 					margin: 10px 0;
+				}
+				@media (max-width: 380px) {
+					margin: 5px 0;
 				}
 			}
 
@@ -60,6 +82,10 @@
 				@media (max-width: 600px) {
 					font-size: 14px;
 					margin: 10px 0;
+				}
+				@media (max-width: 380px) {
+					font-size: 12px;
+					margin: 5px 0;
 				}
 			}
 
@@ -130,13 +156,13 @@
 		}
 	}
 	.prev {
-		left: 125px;
+		left: 50px;
 		@media (max-width: 600px) {
 			left: -10px;
 		}
 	}
 	.next {
-		right: 190px;
+		right: 100px;
 		@media (max-width: 600px) {
 			right: 10px;
 		}

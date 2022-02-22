@@ -25,6 +25,12 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: space-between;
+        -ms-flex-align: space-between;
+            align-items: space-between;
   }
 }
 
@@ -59,16 +65,29 @@
   cursor: pointer;
 }
 
+@media (max-width: 600px) {
+  .hero .hero-container .hero-con-left .skill-btn {
+    height: 15px;
+  }
+}
+
 .hero .hero-container .hero-con-left h1 {
   font-family: 'Raleway', sans-serif;
   font-weight: 400;
   font-size: 4rem;
+  font-size: 28px;
 }
 
 @media (max-width: 600px) {
   .hero .hero-container .hero-con-left h1 {
-    font-size: 2rem;
     margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 380px) {
+  .hero .hero-container .hero-con-left h1 {
+    font-size: 16px;
+    margin-bottom: 5px;
   }
 }
 
@@ -76,11 +95,21 @@
   font-family: 'Raleway', sans-serif;
   font-weight: 400;
   font-size: 2.5rem;
+  width: 500px;
+  line-height: 5rem;
 }
 
 @media (max-width: 600px) {
   .hero .hero-container .hero-con-left .typewriter {
     font-size: 1.25rem;
+    line-height: 2.5rem;
+  }
+}
+
+@media (max-width: 380px) {
+  .hero .hero-container .hero-con-left .typewriter {
+    font-size: 12px;
+    line-height: 1rem;
   }
 }
 
@@ -99,27 +128,51 @@
   }
 }
 
-.hero .hero-container .hero-con-left .skill {
+.hero .hero-container .hero-con-left .about-desc {
   font-family: 'Raleway', sans-serif;
   padding-top: 2rem;
   font-size: 1.5rem;
+  width: 500px;
+  text-align: justify;
+  text-justify: inter-word;
+  line-height: 2rem;
+  letter-spacing: 2px;
 }
 
 @media (max-width: 600px) {
-  .hero .hero-container .hero-con-left .skill {
+  .hero .hero-container .hero-con-left .about-desc {
+    width: 95vw;
     font-size: 1.2rem;
+    padding-top: 0.5rem;
     text-align: justify;
     text-justify: inter-word;
     padding-right: 10px;
+    line-height: 1.5rem;
+    letter-spacing: 1px;
   }
 }
 
-.hero .hero-container .hero-con-left .skill .bold {
+@media (max-width: 380px) {
+  .hero .hero-container .hero-con-left .about-desc {
+    font-size: 10px;
+    line-height: 1.2rem;
+  }
+}
+
+.hero .hero-container .hero-con-left .about-desc .bold {
   font-weight: 700;
-  font-size: 14px;
+  font-size: 2rem;
   color: #edf2f4;
   cursor: pointer;
   letter-spacing: 1px;
+  font-size: 1.5rem;
+}
+
+@media (max-width: 380px) {
+  .hero .hero-container .hero-con-left .about-desc .bold {
+    font-size: 10px;
+    line-height: 1.2rem;
+  }
 }
 
 .hero .hero-container .hero-con-center {
@@ -134,9 +187,9 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media (max-width: 600px) {
@@ -144,25 +197,30 @@
     -webkit-box-flex: 4;
         -ms-flex: 4;
             flex: 4;
-    margin: 0;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin: 10px 0;
+    margin: 5px 0;
   }
 }
 
 .hero .hero-container .hero-con-center .skill-title {
-  padding: 3rem 2.5rem;
+  padding: 2rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 @media (max-width: 600px) {
   .hero .hero-container .hero-con-center .skill-title {
-    padding: 1rem 0;
-    margin: 0 auto;
+    margin-top: 10px;
+    padding: 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -187,41 +245,48 @@
 
 @media (max-width: 600px) {
   .hero .hero-container .hero-con-center .skill-title h1 {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 }
 
-.hero .hero-container .hero-con-center .skill-title hr.divider {
-  border: 2px solid #ef233c;
-  background-color: #ef233c;
-  width: 250px;
-  margin: 10px 0;
+@media (max-width: 380px) {
+  .hero .hero-container .hero-con-center .skill-title h1 {
+    display: none;
+  }
+}
+
+.hero .hero-container .hero-con-center .skill-con-wrapper {
+  width: 200px;
 }
 
 @media (max-width: 600px) {
-  .hero .hero-container .hero-con-center .skill-title hr.divider {
-    width: 80px;
-    margin: 8px 0;
+  .hero .hero-container .hero-con-center .skill-con-wrapper {
+    padding: 15px 0;
   }
 }
 
-.hero .hero-container .hero-con-center .skills-con {
-  width: 90%;
-  padding: 1rem 3rem;
+@media (max-width: 380px) {
+  .hero .hero-container .hero-con-center .skill-con-wrapper {
+    padding: 10px 0;
+  }
+}
+
+.hero .hero-container .hero-con-center .skill-con-wrapper .skills-con {
+  padding: 1rem 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: #edf2f4;
 }
 
 @media (max-width: 600px) {
-  .hero .hero-container .hero-con-center .skills-con {
+  .hero .hero-container .hero-con-center .skill-con-wrapper .skills-con {
     width: 90%;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
@@ -230,13 +295,19 @@
   }
 }
 
-.hero .hero-container .hero-con-center .skills-con h2 {
+@media (max-width: 600px) and (max-width: 380px) {
+  .hero .hero-container .hero-con-center .skill-con-wrapper .skills-con {
+    padding: 0;
+  }
+}
+
+.hero .hero-container .hero-con-center .skill-con-wrapper .skills-con h2 {
   font-size: 2rem;
   font-family: 'Raleway', sans-serif;
 }
 
 @media (max-width: 600px) {
-  .hero .hero-container .hero-con-center .skills-con h2 {
+  .hero .hero-container .hero-con-center .skill-con-wrapper .skills-con h2 {
     font-size: 1rem;
   }
 }
@@ -317,7 +388,7 @@
   background-color: #ef233c;
   left: 0;
   top: 0;
-  opacity: 0.8;
+  opacity: 0.3;
 }
 
 @media (max-width: 600px) {
@@ -334,7 +405,7 @@
   background-color: #ff7700;
   left: 4rem;
   top: 4rem;
-  opacity: 0.8;
+  opacity: 0.3;
 }
 
 @media (max-width: 600px) {
